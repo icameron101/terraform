@@ -25,17 +25,12 @@ TIPS:
 main.tf can be broken down into modules to abstract complexity
 
 
-What Next :
-Where to go next inside DB?
-DB Terraform Best Practices : https://confluence.intranet.db.com/display/CPTCE/Landing+Zone+Best+PracticesRe-usable 
-Terraform Modules with DB : https://confluence.intranet.db.com/display/CPTCE/ModulesNew 
-Module Authoring Best Practices : https://confluence.intranet.db.com/display/CPTCE/Module+AuthoringPlugins based automation : https://confluence.intranet.db.com/display/CPTCE/Landing+Zone+Plugins
 
 root@workstation:~/hashicat-gcp# echo $GOOGLE_CREDENTIALS | jq
 {
   "type": "service_account",
   "project_id": "p-6md392963zg8dx1s7i35gs7mulqy",
-  "private_key_id": "87d6d8f0343de384affea16d21dc8e55a12ed466",
+  "private_key_id": "blahblah",
   "private_key": ",
   "client_email": "service-account@p-6md392963zg8dx1s7i35gs7mulqy.iam.gserviceaccount.com",
   "client_id": "112688454689338173183",
