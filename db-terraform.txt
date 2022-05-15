@@ -1,0 +1,50 @@
+
+lab link: https://play.instruqt.com/hashicorp/invite/xcvrasfcopto
+
+https://play.instruqt.com/study-room
+
+Presentation: https://hashicorp.github.io/field-workshops-terraform/slides/gcp/terraform-oss/
+
+differences between TF and Ansible - and how they compliment each other: https://www.hashicorp.com/resources/ansible-terraform-better-together
+
+Hashicorp Nomad: you need a simple and flexible scheduler and orchestrator to deploy and manage containers and non-containerized applications across on-prem and clouds at scale - https://www.nomadproject.io/
+
+https://registry.terraform.io/providers/hashicorp/google/latest/docs
+
+
+TRACK :
+https://play.instruqt.com/hashicorp/invite/xcvrasfcopto
+
+--MacBook Terraform
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+brew update
+terraform -install-autocomplete
+
+TIPS:
+main.tf can be broken down into modules to abstract complexity
+
+
+What Next :
+Where to go next inside DB?
+DB Terraform Best Practices : https://confluence.intranet.db.com/display/CPTCE/Landing+Zone+Best+PracticesRe-usable 
+Terraform Modules with DB : https://confluence.intranet.db.com/display/CPTCE/ModulesNew 
+Module Authoring Best Practices : https://confluence.intranet.db.com/display/CPTCE/Module+AuthoringPlugins based automation : https://confluence.intranet.db.com/display/CPTCE/Landing+Zone+Plugins
+
+root@workstation:~/hashicat-gcp# echo $GOOGLE_CREDENTIALS | jq
+{
+  "type": "service_account",
+  "project_id": "p-6md392963zg8dx1s7i35gs7mulqy",
+  "private_key_id": "87d6d8f0343de384affea16d21dc8e55a12ed466",
+  "private_key": ",
+  "client_email": "service-account@p-6md392963zg8dx1s7i35gs7mulqy.iam.gserviceaccount.com",
+  "client_id": "112688454689338173183",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account%40p-6md392963zg8dx1s7i35gs7mulqy.iam.gserviceaccount.com"
+}
+
+CHECK RESOURCES WITH DEPENDENCIES
+terraform graph
+blast-radius --serve .
